@@ -37,7 +37,7 @@ export class AuthService {
       console.log("account here is " + JSON.stringify(this.account));
       console.log("this here is ",this);
       // console.log("account here is " + this.account.client);
-      const dt=await this.account.createEmailSession(email, password);
+      const dt=await this.account.createEmailPasswordSession(email, password);
       console.log("dt here is ",dt);
       return dt;
     } catch (error) {
